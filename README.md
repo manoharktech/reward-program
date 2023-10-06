@@ -6,7 +6,7 @@ The rest API to get customer rewards based on customerNumber
 
 Using actuator,check the application is UP.
 http://localhost:8080/actuator/health
-refer the document (retail-rewards.docx)
+refer the document (retail-rewards.docx)/retail-rewards.pdf
 
 Disable security features for actuator
 management.security.enabled = false
