@@ -5,8 +5,29 @@ The rest API to get customer rewards based on customerNumber
 # http://localhost:8080/customers/101/rewards
 
 Using actuator,check the application is UP.
+
 http://localhost:8080/actuator/health
-refer the document (retail-rewards.docx)/retail-rewards.pdf
+![Alt text](.\screen-shots\healthcheck.png?raw=true "health check")
+
+http://localhost:8080/h2-console
+![Alt text](.\screen-shots\h2db.png?raw=true "h2db")
+In repository, check the script.sql file
+![Alt text](.\screen-shots\projectexplorer.png?raw=true "projectexplorer")
+Copy the script.sql in the h2 memory database and run, it will add the data to tables.
+![Alt text](.\screen-shots\insert_db_scripts.png?raw=true "insert db scripts")
+
+Check the data added to tables.
+
+![Alt text](.\screen-shots\data_to_tables.png?raw=true "data to tables")
+
+Junit tests
+
+![Alt text](.\screen-shots\Junit.png?raw=true "Junit")
+
+serice alive(# http://localhost:8080/customers/101/rewards)
+
+![Alt text](.\screen-shots\service_alive.png?raw=true "service_alive")
+
 
 Disable security features for actuator
 management.security.enabled = false
