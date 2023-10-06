@@ -26,6 +26,14 @@ public class Transaction {
 	@Column(name = "AMOUNT")
 	private double transactionAmount;
 
+	public Transaction(long l, long custNum, Timestamp transactionDate,double transactionAmount) {
+		this.transactionNumber=l;
+		this.customerNumber=custNum;
+		this.transactionDate=transactionDate;
+		this.transactionAmount=transactionAmount;
+
+	}
+
 	public Long getTransactionId() {
 		return transactionNumber;
 	}

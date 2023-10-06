@@ -11,6 +11,11 @@ import jakarta.persistence.Table;
 @Table(name = "CUSTOMER")
 public class Customer {
 
+	public Customer(long l, String string) {
+		this.customerNumber=l;
+		this.customerName=string;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "CUSTOMER_NUMBER")
