@@ -2,18 +2,22 @@
 retail reward-program to provide points to customers
 
 The rest API to get customer rewards based on customerNumber
-# http://localhost:8080/customers/101/rewards
 
 Using actuator,check the application is UP.
 
 http://localhost:8080/actuator/health
 ![Alt text](https://github.com/manoharktech/reward-program/blob/main/screen-shots/healthcheck.png?raw=true "health check")
 
-http://localhost:8080/h2-console
-![Alt text](.\screen-shots\h2db.png?raw=true "h2db")
+
+![Alt text](https://github.com/manoharktech/reward-program/blob/main/screen-shots/h2db.png?raw=true "h2db")
+
 In repository, check the script.sql file
+
+
 ![Alt text](https://github.com/manoharktech/reward-program/blob/main/screen-shots/projectexplorer.png?raw=true "projectexplorer")
+
 Copy the script.sql in the h2 memory database and run, it will add the data to tables.
+
 ![Alt text](https://github.com/manoharktech/reward-program/blob/main/screen-shots/insert_db_scripts.png?raw=true "insert db scripts")
 
 Check the data added to tables.
